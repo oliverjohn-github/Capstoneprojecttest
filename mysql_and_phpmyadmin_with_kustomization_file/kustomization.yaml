@@ -1,0 +1,12 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=password
+
+resources:
+  #- project-secrets.yaml
+  - mysql-pv.yaml
+  - mysql-service.yaml
+  - mysql-deployment.yaml
+  - phpmyadmin-service.yaml
+  - phpmyadmin-deployment.yaml
